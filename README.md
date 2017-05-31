@@ -4,10 +4,10 @@ AlertView of password.
 
 
 #screenshot
-![JD1](https://raw.githubusercontent.com/lilongcnc/LLPassWordAlertView/master/JD1.png "github") 
 
+![JD1](https://raw.githubusercontent.com/lilongcnc/LLPassWordAlertView/master/screenShot/JD1.png) 
 
-![JD2](https://raw.githubusercontent.com/lilongcnc/LLPassWordAlertView/master/JD2.png "github") 
+![JD2](https://raw.githubusercontent.com/lilongcnc/LLPassWordAlertView/master/screenShot/JD2.png) 
 
 
 # Usage:
