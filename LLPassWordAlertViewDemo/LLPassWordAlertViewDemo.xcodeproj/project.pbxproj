@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89EA1FC11EDF074100D15C86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FC01EDF074100D15C86 /* main.m */; };
+		89EA1FC41EDF074100D15C86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FC31EDF074100D15C86 /* AppDelegate.m */; };
+		89EA1FC71EDF074100D15C86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FC61EDF074100D15C86 /* ViewController.m */; };
+		89EA1FCC1EDF074100D15C86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89EA1FCB1EDF074100D15C86 /* Assets.xcassets */; };
+		89EA1FCF1EDF074100D15C86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EA1FCD1EDF074100D15C86 /* LaunchScreen.storyboard */; };
+		89EA1FDA1EDF074100D15C86 /* LLPassWordAlertViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FD91EDF074100D15C86 /* LLPassWordAlertViewDemoTests.m */; };
+		89EA1FE51EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FE41EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.m */; };
+		89EA1FF31EDF077200D15C86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EA1FF21EDF077200D15C86 /* Main.storyboard */; };
+		89EA1FFA1EDF078C00D15C86 /* LLPassWordAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89EA1FF51EDF078C00D15C86 /* LLPassWordAlertView.bundle */; };
+		89EA1FFB1EDF078C00D15C86 /* LLPassWordAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FF71EDF078C00D15C86 /* LLPassWordAlertView.m */; };
+		89EA1FFC1EDF078C00D15C86 /* SLPasswordInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EA1FF91EDF078C00D15C86 /* SLPasswordInputView.m */; };
+		89EA1FFE1EDF07AA00D15C86 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 89EA1FFD1EDF07AA00D15C86 /* 1.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89EA1FD61EDF074100D15C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89EA1FB41EDF074100D15C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89EA1FBB1EDF074100D15C86;
+			remoteInfo = LLPassWordAlertViewDemo;
+		};
+		89EA1FE11EDF074100D15C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89EA1FB41EDF074100D15C86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89EA1FBB1EDF074100D15C86;
+			remoteInfo = LLPassWordAlertViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89EA1FBC1EDF074100D15C86 /* LLPassWordAlertViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLPassWordAlertViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EA1FC01EDF074100D15C86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		89EA1FC21EDF074100D15C86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		89EA1FC31EDF074100D15C86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		89EA1FC51EDF074100D15C86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		89EA1FC61EDF074100D15C86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89EA1FCB1EDF074100D15C86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89EA1FCE1EDF074100D15C86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89EA1FD01EDF074100D15C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EA1FD51EDF074100D15C86 /* LLPassWordAlertViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLPassWordAlertViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EA1FD91EDF074100D15C86 /* LLPassWordAlertViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPassWordAlertViewDemoTests.m; sourceTree = "<group>"; };
+		89EA1FDB1EDF074100D15C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EA1FE01EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLPassWordAlertViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89EA1FE41EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLPassWordAlertViewDemoUITests.m; sourceTree = "<group>"; };
+		89EA1FE61EDF074100D15C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EA1FF21EDF077200D15C86 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		89EA1FF51EDF078C00D15C86 /* LLPassWordAlertView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LLPassWordAlertView.bundle; sourceTree = "<group>"; };
+		89EA1FF61EDF078C00D15C86 /* LLPassWordAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLPassWordAlertView.h; sourceTree = "<group>"; };
+		89EA1FF71EDF078C00D15C86 /* LLPassWordAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLPassWordAlertView.m; sourceTree = "<group>"; };
+		89EA1FF81EDF078C00D15C86 /* SLPasswordInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPasswordInputView.h; sourceTree = "<group>"; };
+		89EA1FF91EDF078C00D15C86 /* SLPasswordInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPasswordInputView.m; sourceTree = "<group>"; };
+		89EA1FFD1EDF07AA00D15C86 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89EA1FB91EDF074100D15C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FD21EDF074100D15C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FDD1EDF074100D15C86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89EA1FB31EDF074100D15C86 = {
+			isa = PBXGroup;
+			children = (
+				89EA1FF41EDF078C00D15C86 /* LLPassWordAlertView */,
+				89EA1FBE1EDF074100D15C86 /* LLPassWordAlertViewDemo */,
+				89EA1FD81EDF074100D15C86 /* LLPassWordAlertViewDemoTests */,
+				89EA1FE31EDF074100D15C86 /* LLPassWordAlertViewDemoUITests */,
+				89EA1FBD1EDF074100D15C86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89EA1FBD1EDF074100D15C86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FBC1EDF074100D15C86 /* LLPassWordAlertViewDemo.app */,
+				89EA1FD51EDF074100D15C86 /* LLPassWordAlertViewDemoTests.xctest */,
+				89EA1FE01EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89EA1FBE1EDF074100D15C86 /* LLPassWordAlertViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FFD1EDF07AA00D15C86 /* 1.jpg */,
+				89EA1FC21EDF074100D15C86 /* AppDelegate.h */,
+				89EA1FC31EDF074100D15C86 /* AppDelegate.m */,
+				89EA1FC51EDF074100D15C86 /* ViewController.h */,
+				89EA1FC61EDF074100D15C86 /* ViewController.m */,
+				89EA1FF21EDF077200D15C86 /* Main.storyboard */,
+				89EA1FCB1EDF074100D15C86 /* Assets.xcassets */,
+				89EA1FCD1EDF074100D15C86 /* LaunchScreen.storyboard */,
+				89EA1FD01EDF074100D15C86 /* Info.plist */,
+				89EA1FBF1EDF074100D15C86 /* Supporting Files */,
+			);
+			path = LLPassWordAlertViewDemo;
+			sourceTree = "<group>";
+		};
+		89EA1FBF1EDF074100D15C86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FC01EDF074100D15C86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89EA1FD81EDF074100D15C86 /* LLPassWordAlertViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FD91EDF074100D15C86 /* LLPassWordAlertViewDemoTests.m */,
+				89EA1FDB1EDF074100D15C86 /* Info.plist */,
+			);
+			path = LLPassWordAlertViewDemoTests;
+			sourceTree = "<group>";
+		};
+		89EA1FE31EDF074100D15C86 /* LLPassWordAlertViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FE41EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.m */,
+				89EA1FE61EDF074100D15C86 /* Info.plist */,
+			);
+			path = LLPassWordAlertViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		89EA1FF41EDF078C00D15C86 /* LLPassWordAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				89EA1FF51EDF078C00D15C86 /* LLPassWordAlertView.bundle */,
+				89EA1FF61EDF078C00D15C86 /* LLPassWordAlertView.h */,
+				89EA1FF71EDF078C00D15C86 /* LLPassWordAlertView.m */,
+				89EA1FF81EDF078C00D15C86 /* SLPasswordInputView.h */,
+				89EA1FF91EDF078C00D15C86 /* SLPasswordInputView.m */,
+			);
+			path = LLPassWordAlertView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89EA1FBB1EDF074100D15C86 /* LLPassWordAlertViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EA1FE91EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemo" */;
+			buildPhases = (
+				89EA1FB81EDF074100D15C86 /* Sources */,
+				89EA1FB91EDF074100D15C86 /* Frameworks */,
+				89EA1FBA1EDF074100D15C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLPassWordAlertViewDemo;
+			productName = LLPassWordAlertViewDemo;
+			productReference = 89EA1FBC1EDF074100D15C86 /* LLPassWordAlertViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89EA1FD41EDF074100D15C86 /* LLPassWordAlertViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EA1FEC1EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemoTests" */;
+			buildPhases = (
+				89EA1FD11EDF074100D15C86 /* Sources */,
+				89EA1FD21EDF074100D15C86 /* Frameworks */,
+				89EA1FD31EDF074100D15C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89EA1FD71EDF074100D15C86 /* PBXTargetDependency */,
+			);
+			name = LLPassWordAlertViewDemoTests;
+			productName = LLPassWordAlertViewDemoTests;
+			productReference = 89EA1FD51EDF074100D15C86 /* LLPassWordAlertViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89EA1FDF1EDF074100D15C86 /* LLPassWordAlertViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89EA1FEF1EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemoUITests" */;
+			buildPhases = (
+				89EA1FDC1EDF074100D15C86 /* Sources */,
+				89EA1FDD1EDF074100D15C86 /* Frameworks */,
+				89EA1FDE1EDF074100D15C86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89EA1FE21EDF074100D15C86 /* PBXTargetDependency */,
+			);
+			name = LLPassWordAlertViewDemoUITests;
+			productName = LLPassWordAlertViewDemoUITests;
+			productReference = 89EA1FE01EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89EA1FB41EDF074100D15C86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "李龙";
+				TargetAttributes = {
+					89EA1FBB1EDF074100D15C86 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZHR3SCPQ6E;
+						ProvisioningStyle = Automatic;
+					};
+					89EA1FD41EDF074100D15C86 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZHR3SCPQ6E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 89EA1FBB1EDF074100D15C86;
+					};
+					89EA1FDF1EDF074100D15C86 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = ZHR3SCPQ6E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 89EA1FBB1EDF074100D15C86;
+					};
+				};
+			};
+			buildConfigurationList = 89EA1FB71EDF074100D15C86 /* Build configuration list for PBXProject "LLPassWordAlertViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89EA1FB31EDF074100D15C86;
+			productRefGroup = 89EA1FBD1EDF074100D15C86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89EA1FBB1EDF074100D15C86 /* LLPassWordAlertViewDemo */,
+				89EA1FD41EDF074100D15C86 /* LLPassWordAlertViewDemoTests */,
+				89EA1FDF1EDF074100D15C86 /* LLPassWordAlertViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89EA1FBA1EDF074100D15C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EA1FFA1EDF078C00D15C86 /* LLPassWordAlertView.bundle in Resources */,
+				89EA1FF31EDF077200D15C86 /* Main.storyboard in Resources */,
+				89EA1FCF1EDF074100D15C86 /* LaunchScreen.storyboard in Resources */,
+				89EA1FCC1EDF074100D15C86 /* Assets.xcassets in Resources */,
+				89EA1FFE1EDF07AA00D15C86 /* 1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FD31EDF074100D15C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FDE1EDF074100D15C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89EA1FB81EDF074100D15C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EA1FC71EDF074100D15C86 /* ViewController.m in Sources */,
+				89EA1FC41EDF074100D15C86 /* AppDelegate.m in Sources */,
+				89EA1FFC1EDF078C00D15C86 /* SLPasswordInputView.m in Sources */,
+				89EA1FFB1EDF078C00D15C86 /* LLPassWordAlertView.m in Sources */,
+				89EA1FC11EDF074100D15C86 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FD11EDF074100D15C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EA1FDA1EDF074100D15C86 /* LLPassWordAlertViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89EA1FDC1EDF074100D15C86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EA1FE51EDF074100D15C86 /* LLPassWordAlertViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89EA1FD71EDF074100D15C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89EA1FBB1EDF074100D15C86 /* LLPassWordAlertViewDemo */;
+			targetProxy = 89EA1FD61EDF074100D15C86 /* PBXContainerItemProxy */;
+		};
+		89EA1FE21EDF074100D15C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89EA1FBB1EDF074100D15C86 /* LLPassWordAlertViewDemo */;
+			targetProxy = 89EA1FE11EDF074100D15C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		89EA1FCD1EDF074100D15C86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89EA1FCE1EDF074100D15C86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89EA1FE71EDF074100D15C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		89EA1FE81EDF074100D15C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89EA1FEA1EDF074100D15C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		89EA1FEB1EDF074100D15C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		89EA1FED1EDF074100D15C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLPassWordAlertViewDemo.app/LLPassWordAlertViewDemo";
+			};
+			name = Debug;
+		};
+		89EA1FEE1EDF074100D15C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LLPassWordAlertViewDemo.app/LLPassWordAlertViewDemo";
+			};
+			name = Release;
+		};
+		89EA1FF01EDF074100D15C86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLPassWordAlertViewDemo;
+			};
+			name = Debug;
+		};
+		89EA1FF11EDF074100D15C86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZHR3SCPQ6E;
+				INFOPLIST_FILE = LLPassWordAlertViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lauren.LLPassWordAlertViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LLPassWordAlertViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89EA1FB71EDF074100D15C86 /* Build configuration list for PBXProject "LLPassWordAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EA1FE71EDF074100D15C86 /* Debug */,
+				89EA1FE81EDF074100D15C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EA1FE91EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EA1FEA1EDF074100D15C86 /* Debug */,
+				89EA1FEB1EDF074100D15C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EA1FEC1EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EA1FED1EDF074100D15C86 /* Debug */,
+				89EA1FEE1EDF074100D15C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89EA1FEF1EDF074100D15C86 /* Build configuration list for PBXNativeTarget "LLPassWordAlertViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89EA1FF01EDF074100D15C86 /* Debug */,
+				89EA1FF11EDF074100D15C86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89EA1FB41EDF074100D15C86 /* Project object */;
+}
