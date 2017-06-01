@@ -10,11 +10,12 @@
 
 
 typedef void (^FinishedBlock)(NSString *pwStr);
+typedef void (^CanelBtnOnClickBlock)();
 
 @interface LLPassWordAlertView : UIView
 
 
-+ (void)showWithTitle:(NSString *)title desStr:(NSString *)desStr finish:(FinishedBlock)finish;
++ (void)showWithTitle:(NSString *)title desStr:(NSString *)desStr finish:(FinishedBlock)finish canelBtnOnClick:(CanelBtnOnClickBlock)canel;
 
 
 

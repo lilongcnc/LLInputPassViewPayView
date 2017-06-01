@@ -37,6 +37,7 @@
 
 
 @property (nonatomic,copy) FinishedBlock finish;
+@property (nonatomic,copy) CanelBtnOnClickBlock canel;
 
 @property (nonatomic,assign) BOOL isVisual;
 
@@ -62,10 +63,11 @@ static CGFloat const bottomLineLTMargin = 10;
 //-----------------------------------------------------------------------------------------------------------
 #pragma mark init Views
 //-----------------------------------------------------------------------------------------------------------
-+ (void)showWithTitle:(NSString *)title desStr:(NSString *)desStr finish:(FinishedBlock)finish
++ (void)showWithTitle:(NSString *)title desStr:(NSString *)desStr finish:(FinishedBlock)finish canelBtnOnClick:(CanelBtnOnClickBlock)canel
 {
     LLPassWordAlertView *pdView = [[LLPassWordAlertView alloc] initViewWithTitle:title desStr:desStr];
     pdView.finish = finish;
+    pdView.canel = canel;
     [pdView show];
 }
 
@@ -85,18 +87,16 @@ static CGFloat const bottomLineLTMargin = 10;
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(TPKeyboardAvoiding_keyboardWillShow:) name:UIKeyboardWillChangeFrameNotification object:nil];
         
         //is blur
-        self.isVisual = YES;
-
+        _isVisual = YES;
+        
         [self setupCover];
         [self setupContent];
         [self modifyFrame];
     }
-
+    
     
     return self;
 }
-
-
 
 
 
@@ -158,7 +158,8 @@ static CGFloat const bottomLineLTMargin = 10;
     if (isVisual) {
         self.effectView.backgroundColor = [UIColor clearColor];
     }else {
-        self.effectView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        //        self.effectView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:102.0/255];
+        self.effectView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
     }
 }
 
@@ -201,7 +202,7 @@ static CGFloat const bottomLineLTMargin = 10;
         _titleLabel.numberOfLines = 0;
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-//        _titleLabel.backgroundColor = [UIColor blueColor];
+        //        _titleLabel.backgroundColor = [UIColor blueColor];
         _titleLabel.font = [UIFont boldSystemFontOfSize:16];
     }
     return _titleLabel;
@@ -215,7 +216,7 @@ static CGFloat const bottomLineLTMargin = 10;
         _desLabel.numberOfLines = 2;
         _desLabel.textColor = [UIColor blackColor];
         _desLabel.textAlignment = NSTextAlignmentCenter;
-//        _desLabel.backgroundColor = [UIColor cyanColor];
+        //        _desLabel.backgroundColor = [UIColor cyanColor];
         _desLabel.font = [UIFont systemFontOfSize:23];
     }
     return _desLabel;
@@ -230,7 +231,7 @@ static CGFloat const bottomLineLTMargin = 10;
         CGFloat pwViewWH = (pwViewWidth-2)/6;
         
         SLPasswordInputView *inputView = [[SLPasswordInputView alloc]
-                                           initWithFrame:CGRectMake(pwViewLTMargin, CGRectGetMaxY(self.bottomLineView.frame)+pwViewMargin, pwViewWidth, pwViewWH)];
+                                          initWithFrame:CGRectMake(pwViewLTMargin, CGRectGetMaxY(self.bottomLineView.frame)+pwViewMargin, pwViewWidth, pwViewWH)];
         inputView.backgroundColor = [UIColor whiteColor];
         inputView.delegate = self;
         inputView.passwordLength = 6;
@@ -293,7 +294,7 @@ static CGFloat const bottomLineLTMargin = 10;
 }
 
 - (void)dismiss {
-
+    
     [UIView animateWithDuration:0.3f animations:^{
         if (self.isVisual) {
             self.effectView.effect = nil;
@@ -373,7 +374,7 @@ static CGFloat const bottomLineLTMargin = 10;
 #define _UIKeyboardFrameEndUserInfoKey (&UIKeyboardFrameEndUserInfoKey != NULL ? UIKeyboardFrameEndUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
 - (void)TPKeyboardAvoiding_keyboardWillShow:(NSNotification*)notification {
     //    CGRect rect = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-
+    
     CGRect keyboardRect = [self convertRect:[[[notification userInfo] objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
     if (CGRectIsEmpty(keyboardRect)) {
         return;
@@ -417,9 +418,15 @@ static CGFloat const bottomLineLTMargin = 10;
 //---------------------------------------------------------------------------------------------------------
 - (void)canelBtnOnClick:(UIButton *)btn
 {
+    
+    if (self.canel) {
+        self.canel();
+    }
+    
     [self.pwView resignFirstResponder];
     
     [self dismiss];
+    
 }
 
 
