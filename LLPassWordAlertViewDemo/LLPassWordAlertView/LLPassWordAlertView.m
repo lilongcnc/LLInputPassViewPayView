@@ -158,6 +158,7 @@ static CGFloat const bottomLineLTMargin = 10;
     if (isVisual) {
         self.effectView.backgroundColor = [UIColor clearColor];
     }else {
+        //        self.effectView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:102.0/255];
         self.effectView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
     }
 }
@@ -201,6 +202,7 @@ static CGFloat const bottomLineLTMargin = 10;
         _titleLabel.numberOfLines = 0;
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
+        //        _titleLabel.backgroundColor = [UIColor blueColor];
         _titleLabel.font = [UIFont boldSystemFontOfSize:16];
     }
     return _titleLabel;
@@ -214,6 +216,7 @@ static CGFloat const bottomLineLTMargin = 10;
         _desLabel.numberOfLines = 2;
         _desLabel.textColor = [UIColor blackColor];
         _desLabel.textAlignment = NSTextAlignmentCenter;
+        //        _desLabel.backgroundColor = [UIColor cyanColor];
         _desLabel.font = [UIFont systemFontOfSize:23];
     }
     return _desLabel;
@@ -370,12 +373,19 @@ static CGFloat const bottomLineLTMargin = 10;
 //---------------------------------------------------------------------------------------------------------
 #define _UIKeyboardFrameEndUserInfoKey (&UIKeyboardFrameEndUserInfoKey != NULL ? UIKeyboardFrameEndUserInfoKey : @"UIKeyboardBoundsUserInfoKey")
 - (void)TPKeyboardAvoiding_keyboardWillShow:(NSNotification*)notification {
+    //    CGRect rect = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    
     CGRect keyboardRect = [self convertRect:[[[notification userInfo] objectForKey:_UIKeyboardFrameEndUserInfoKey] CGRectValue] fromView:nil];
     if (CGRectIsEmpty(keyboardRect)) {
         return;
     }
+    
+    
+    NSLog(@"%@",NSStringFromCGRect(keyboardRect) );
+    
     CGFloat newY = self.screenH - keyboardRect.size.height - CGRectGetHeight(self.contentView.frame) - 50;
     [self setY:newY inView:self.contentView];
+    
 }
 
 
@@ -384,10 +394,14 @@ static CGFloat const bottomLineLTMargin = 10;
 //---------------------------------------------------------------------------------------------------------
 
 - (void)passwordInputView:(SLPasswordInputView *)inputView willBeginInputWithPassword:(NSString *)password{
+    NSLog(@"%s",__FUNCTION__);
+    
 }
 
 
 - (void)passwordInputView:(SLPasswordInputView *)inputView didFinishInputWithPassword:(NSString *)password{
+    NSLog(@"%s",__FUNCTION__);
+    
     if (self.finish) {
         self.finish(password);
     }
@@ -395,6 +409,7 @@ static CGFloat const bottomLineLTMargin = 10;
     [inputView resignFirstResponder];
     
     [self dismiss];
+    
 }
 
 
